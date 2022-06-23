@@ -198,11 +198,15 @@ nav {
 .social-icons {
   display: none;
 }
-.links {
-  /* height: 0;
+
+/*Hidden links*/
+.links{
+  height: 0;
   overflow: hidden;
-  transition: var(--transition); */
+  transition: var(--transition);
 }
+
+/*Shown links*/
 .show-links {
   height: 10rem;
 }
@@ -222,6 +226,8 @@ nav {
     display: none;
   }
   .links {
+  /*It's extremely important to set the height as auto
+  due to the hidden overflow of links outside the media query.*/
     height: auto;
     display: flex;
   }
